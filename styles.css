@@ -1,0 +1,134 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: slateblue;
+}
+
+#game{
+    width: 100vw;
+    height:100vh;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    align-items:fit-content;
+}
+.banner{
+    margin-top: 20px;
+    font-size: 1.3em;
+    height: 1.5em;
+}
+.welcome button{
+    background-color: rgb(206, 200, 243);
+    color:rgb(17, 180, 245);
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 0.5em;
+    border-radius: 5px;
+
+
+
+}
+table {background-color: snow;
+    
+} 
+td {
+    border: #f0f7f0 1px solid;
+    width : 30px;
+    height :30px;
+    background-color: rgb(177, 104, 245);
+    box-sizing: border-box;
+    position: relative;
+    padding:0;
+    margin:0;
+}
+
+
+
+td > .cell{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0 ;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    color: rgb(177, 104, 245);
+    
+}
+td>.cell.clear{
+    background-color: rgb(243, 245, 247);
+    color:rgb(163, 188, 241);
+}
+td>.cell.exploded{
+    background-color: black;
+    color: #999;
+}
+table.exploded,table.exploded td{
+    background-color: black;
+}
+.loser{
+    position: absolute;
+    background-color: rgb(25, 26, 23);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.winner{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(206, 200, 243) ;
+
+
+    text-align: center;
+    color:rgb(241, 248, 172);
+    width: 100%;
+    height: 100%;
+
+}
+.loser h3{
+    font-size: 1em;
+    color:white;
+    position:relative;
+    font-family:"宋体";
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.welcome button{
+    margin: 50px;
+    position:relative;
+    
+    text-align: center;
+}
+#over {color:red;
+    position: absolute;
+    font-size: 2em;
+    top: 100;
+    text-align: center;
+
+
+
+}
+
+
+
+
+
